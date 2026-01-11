@@ -4,6 +4,8 @@ This repository contains the demo system described in the AAMAS 2026 paper
 "CV-MAPS: An Interactive Multi-Agent System for Personality-Aware Multimodal
 Self-Presentation Coaching".
 
+Authors: Elena Ryumina, Alexandr Axyonov, Dmitry Ryumin, Alexey Karpov.
+
 ## Abstract
 This demo introduces CV-MAPS, an interactive multi-agent system for
 personality-aware multimodal self-presentation coaching. The system guides
@@ -60,6 +62,9 @@ demo without changing the core logic.
    ```bash
    pip install -r requirements.txt
    ```
+3) Download the `core/modalities` folder from Google Drive and place it into
+   `core/` with replacement:
+   https://drive.google.com/drive/folders/1ccUYUFJAbqGlt4atFK4h43MT1lkGx2JY?usp=sharing
 3) Ensure `ffmpeg` is available in your PATH (used for video conversion).
 
 Notes:
@@ -71,3 +76,20 @@ Notes:
 python run.py
 ```
 Open http://0.0.0.0:7860 in a browser.
+
+## Acknowledgments
+We thank the authors of the study below for publishing the profession-trait
+profiles used in this demo:
+
+@article{kern2019social,
+  title={Social media-predicted personality traits and values can help match people to their ideal jobs},
+  author={Kern, Margaret L and McCarthy, Paul X and Chakrabarty, Deepanjan and Rizoiu, Marian-Andrei},
+  journal={National Academy of Sciences},
+  volume={116},
+  number={52},
+  pages={26459--26464},
+  year={2019},
+}
+
+Data source:
+https://github.com/behavioral-ds/VocationMap/blob/master/data/profession-profiles.csv
